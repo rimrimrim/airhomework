@@ -1,0 +1,15 @@
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/Users/takanorimidorikawa/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170928-94906-1lgkler.rb extconf.rb
+creating Makefile
+
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20170928-94906-1p4m1u/bindex

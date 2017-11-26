@@ -1,0 +1,37 @@
+<div class="containar">
+  <div class="row">
+    <div class="col-lg-3 col-md-4">
+      <div class="user-profile row-space-4 text-center">
+        <%#= image_tag @users.image, :class => "profile-full img-circle" %>
+      </div>
+
+      <div class="panel panel-default vertifications hidden-xs hidden-sm">
+        <div class="panel-heading">
+          認証済みID
+        </div>
+        <div class="panel-body">
+          <div class="ver-email">
+            メールアドレス</br>
+            <%= @user.email %>
+          </div>
+          <br>
+          <div class="ver-tel">
+            電話番号</br>
+            <%= @user.phone_number %>
+          </div>
+          <br>
+          <div class="ver-facebook">
+            Facebook
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-9 col-md-8 col-sm-12">
+      <h3>こんにちは</h3>
+      <p>自己紹介</p>
+      <p><%= @user.description %></p>
+    </div>
+
+  </div>
+</div>

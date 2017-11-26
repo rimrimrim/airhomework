@@ -1,0 +1,19 @@
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+/Users/takanorimidorikawa/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170927-67433-1jl4zfo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/takanorimidorikawa/rails_product/tempest_product/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20170927-67433-6sevau/byebug

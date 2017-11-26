@@ -1,0 +1,45 @@
+<%= form_with(model: title, local: true) do |form| %>
+  <% if title.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(title.errors.count, "error") %> prohibited this title from being saved:</h2>
+
+      <ul>
+      <% title.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :memo %>
+    <%= form.text_area :memo, id: :title_memo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :author, id: :title_author %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, id: :title_picture %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tag %>
+    <%= form.text_field :tag, id: :title_tag %>
+  </div>
+  <div class="field">
+    <%= form.label :tag2 %>
+    <%= form.text_field :tag2, id: :title_tag2 %>
+  </div>
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.text_field :data, id: :title_data %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

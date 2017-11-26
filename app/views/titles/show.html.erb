@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>つぎのしつもんをうけつけたよ</br>
+回答するまで少しまってね</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @title.memo %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @title.author %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@title.picture_url) if @title.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>
